@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccny67e8r18ch"]
+
+[ext_resource type="Texture2D" uid="uid://cpcwa36gxggx2" path="res://assets/sprites/shaded-dark/shadedDark24.png" id="1_f232w"]
+[ext_resource type="Texture2D" uid="uid://dyvbvv7acl35k" path="res://assets/sprites/shaded-dark/shadedDark25.png" id="2_bbiqx"]
+[ext_resource type="Texture2D" uid="uid://bj8jrtmrq8g04" path="res://assets/sprites/shaded-dark/shadedDark26.png" id="3_uc2nb"]
+
+[node name="TouchControls" type="CanvasLayer"]
+
+[node name="Left" type="TouchScreenButton" parent="."]
+position = Vector2(53, 500)
+scale = Vector2(1.25, 1.25)
+texture_normal = ExtResource("1_f232w")
+passby_press = true
+action = "move_left"
+visibility_mode = 1
+
+[node name="Right" type="TouchScreenButton" parent="."]
+position = Vector2(187.09, 500)
+scale = Vector2(1.25, 1.25)
+texture_normal = ExtResource("2_bbiqx")
+passby_press = true
+action = "move_right"
+visibility_mode = 1
+
+[node name="Jump" type="TouchScreenButton" parent="."]
+position = Vector2(850, 500)
+scale = Vector2(1.25, 1.25)
+texture_normal = ExtResource("3_uc2nb")
+action = "jump"
+visibility_mode = 1
